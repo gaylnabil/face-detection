@@ -1,12 +1,21 @@
 import cv2
 import time
 from random import randrange
+from sys import platform
+
 trained_face = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+capture = cv2.VideoCapture(0)
+
+# used for wsl2/linux
+if platform == 'linux':
+    capture.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
+
 capture.set(3, 780)
 capture.set(4, 640)
 color = (randrange(256), randrange(256), randrange(256))
+
+
 while True:
 
     # Capture the video frame by frame
