@@ -42,3 +42,5 @@ while True:
 capture.release()
 
 cv2.destroyAllWindows()
+
+prtin("Camera is closed!")
