@@ -43,4 +43,4 @@ capture.release()
 
 cv2.destroyAllWindows()
 
-prtin("Camera is closed!")
+print("Camera is closed!")
