@@ -1,1 +1,1 @@
-# Face detection on Python
+# Objects detection on Python
