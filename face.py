@@ -3,7 +3,7 @@ import time
 from random import randrange
 from sys import platform
 
-trained_face = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+trained_face = cv2.CascadeClassifier('trained_classifiers/haarcascade_frontalface_default.xml')
 
 capture = cv2.VideoCapture(0)
 
